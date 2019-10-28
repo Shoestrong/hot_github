@@ -104,7 +104,7 @@ export default {
       this.langs = []
       $.ajax({
         // url:"http://app.gitlogs.com/trending",
-        url:"/trending",
+        url:"https://dent-spruce.glitch.me/trending",
         data:'date='+d,
         success:(result) =>{
           result.forEach((v)=>{
