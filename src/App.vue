@@ -104,9 +104,11 @@ export default {
       this.langs = []
       $.ajax({
         // url:"http://app.gitlogs.com/trending",
-        url:"https://dent-spruce.glitch.me/trending",
+        // url:"https://dent-spruce.glitch.me/trending",
+        url: 'https://api.shoestrong.com/api/trending',
         data:'date='+d,
         success:(result) =>{
+          console.log(result)
           result.forEach((v)=>{
             if(v.repo){
               this.results.push({
