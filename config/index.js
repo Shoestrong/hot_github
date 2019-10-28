@@ -29,7 +29,7 @@ module.exports = {
     assetsPublicPath: '/',
     proxyTable: {
       '/trending': {
-        target: 'http://app.gitlogs.com',
+        target: 'https://dent-spruce.glitch.me',
         changeOrigin: true,
         pathRewrite: {
           '^/trending': '/trending'

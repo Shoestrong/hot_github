@@ -103,7 +103,8 @@ export default {
       this.results=[]
       this.langs = []
       $.ajax({
-        url:"http://app.gitlogs.com/trending",
+        // url:"http://app.gitlogs.com/trending",
+        url:"/trending",
         data:'date='+d,
         success:(result) =>{
           result.forEach((v)=>{
